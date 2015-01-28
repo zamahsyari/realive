@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#000">
+        <ImageView
+            android:id="@+id/logologo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:layout_below="@+id/logologo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Fire was happened"
+            android:textColor="#fff"
+            android:background="#800000"
+            android:padding="10dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AWhole Foods Market, suspected 2 persons are still inside the building"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textColor="#555"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/activ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#800000"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:text="MISSION DONE"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ddd"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="setting"
+            android:background="#ddd"/>
+        <Button
+            android:id="@+id/btn_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="support"
+            android:background="#ddd"/>
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="about"
+            android:background="#ddd"/>
+    </RelativeLayout>
+</LinearLayout>
